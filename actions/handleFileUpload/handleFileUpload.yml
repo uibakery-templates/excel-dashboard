@@ -1,0 +1,101 @@
+id: '17156022900950.7680265483586559'
+kind: workflow
+name: handleFileUpload
+nameConfigured: true
+steps:
+  - id: '17156023031440.9896375531316948'
+    type: customAsyncCode
+    name: parseExcelDoc
+    params:
+      - type: asyncCode
+        value: ./parseExcelDoc.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17156656926450.13081650247865273'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '17156657234480.3476839851003992'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    paused: false
+  - id: '17157717973010.9191011232644462'
+    type: condition
+    name: isHomePage
+    params:
+      - type: code
+        value: ./isHomePage.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: steps
+        value:
+          - condition: true
+            steps:
+              - id: '17157530847050.8743772638386338'
+                type: executeAction
+                name: updateDashboard
+                params:
+                  - type: action
+                    value: '17157545502120.21134244379828182'
+                    valueType: custom
+                  - type: isActionsLibraryCall
+                    value: false
+                    valueType: custom
+                  - type: customParams
+                    value: ./updateDashboard-customParams.js
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: successMapper
+                    value: ./updateDashboard-successMapper.js
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: failureMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: mapperEnabled
+                    value: true
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+                nameConfigured: true
+          - condition: false
+            steps: []
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: true
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.handleFileUpload.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleFileUpload.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleFileUpload.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: true
+selected: true
+configured: false

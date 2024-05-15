@@ -1,0 +1,57 @@
+id: '17155988722570.1467208663378119'
+definitionId: fileDropZone
+parentSlotId: '17156914919820.16139994227895138'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 2
+      w: 24
+      h: 52
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 240
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17155988722570.1467208663378119'
+      x: 0
+      y: 0
+      w: 24
+      h: 60
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 240
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: fileDropZone
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  fileUploadType:
+    value:
+      fileType: other
+      userDefinedTypes:
+        - application/vnd.ms-excel
+        - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+    dataValue: '''any'''
+    withData: false
+  maxFileSize: '100'
+  value: ''
+  multipleFileUpload:
+    value: false
+    dataValue: 'false'
+    withData: false
+  parseFile: false
+actions:
+  valueChange:
+    - action: '17156022900950.7680265483586559'
+      paramCode: ''
+      index: 0
+slots: []

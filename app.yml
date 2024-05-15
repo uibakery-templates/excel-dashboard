@@ -1,0 +1,28 @@
+storeItemList:
+  - id: '17156657234480.3476839851003992'
+    name: filteredExcelData
+    value: {}
+    valueType: object
+    initialValue: {}
+    version: 1
+metadata:
+  favicon: ''
+  code: "<style>\n\t.nav-menu nb-icon, .nav-menu svg {\n    width: 2rem;\n\t\theight: 2rem;\n  }\n</style>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js\"></script>"
+  title: Excel Dashboard
+  description: ''
+  breakpoints: []
+  rendererCachingEnabled: true
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions:
+    appLoad:
+      - action: '17157518479080.162650666097776'
+        paramCode: ''
+        blockPageLoad: false
+        preventDefault: false
+        index: 0
+    appData: []
+  gridVersion: 2
+  density: compact
+internalType: project

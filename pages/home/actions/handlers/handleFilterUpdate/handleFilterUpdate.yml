@@ -1,0 +1,98 @@
+id: '17156849901580.04560895319789182'
+kind: workflow
+name: handleFilterUpdate
+nameConfigured: true
+steps:
+  - id: '17156876634990.44272139881332406'
+    type: customAsyncCode
+    name: resetQuarterFilter
+    params:
+      - type: asyncCode
+        value: ./resetQuarterFilter.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17156849965370.9908894640040764'
+    type: customAsyncCode
+    name: filterExcelData
+    params:
+      - type: asyncCode
+        value: ./filterExcelData.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17156871209660.0553117693058125'
+    type: putInStore
+    name: updateState
+    params:
+      - type: name
+        value: '17156657234480.3476839851003992'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+  - id: '17157546214690.9459103446785948'
+    type: executeAction
+    name: updateDashboardState
+    params:
+      - type: action
+        value: '17157545502120.21134244379828182'
+        valueType: custom
+      - type: isActionsLibraryCall
+        value: false
+        valueType: custom
+      - type: customParams
+        value: ./updateDashboardState-customParams.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17156849828880.2963657651525551'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleFilterUpdate.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleFilterUpdate.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleFilterUpdate.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

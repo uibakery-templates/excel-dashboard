@@ -1,0 +1,1 @@
+return {{activeRoute.name === routes.home.name}};

@@ -1,0 +1,59 @@
+id: '17155985353240.44873264750826825'
+definitionId: menu
+parentSlotId: '17155985578260.08875663045345505'
+styles:
+  xl:
+    gridItem:
+      x: 1
+      y: 2
+      w: 22
+      h: 52
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+    color:
+      value: basic
+      dataValue: basic
+      withData: false
+  xs:
+    gridItem:
+      x: 1
+      y: 3
+      w: 21
+      h: 40
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  autoSyncItems: false
+  name: menu
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  items: "[\n  {\n   \ticon: 'bar-chart',\n    link: '/home'\n  },\n  {\n    icon: 'upload',\n    link: '/upload'\n  }\n]"
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+  heightMode: fixed
+  cssClasses:
+    - nav-menu
+    - ''
+actions: {}
+slots: []

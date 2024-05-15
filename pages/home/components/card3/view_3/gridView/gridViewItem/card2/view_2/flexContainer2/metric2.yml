@@ -1,0 +1,82 @@
+id: '17156003451430.12346091566997086'
+definitionId: metric
+styles:
+  xl:
+    gridItem:
+      id: '17156003451430.12346091566997086'
+      x: 0
+      y: 0
+      w: 14
+      h: 34
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      id: '17156003451430.12346091566997086'
+      x: 0
+      y: 68
+      w: 14
+      h: 34
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  data: '{{item}}'
+  name: metric2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: '{{item.title}}'
+  operation: show_last
+  groupType: not_group
+  showLoading:
+    withData: true
+    dataValue: 'false'
+    value: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+parentSlotId: '17156786689910.21489937801343495'
+index: 0
+actions: {}
+slots:
+  - id: '17156003451430.02596023540184933'
+    name: metricField
+    children:
+      - id: '17156003451430.2718780468639177'
+        definitionId: atomicCurrency
+        parentSlotId: '17156003451430.02596023540184933'
+        styles: {}
+        properties:
+          name: atomicCurrency2
+          prop: value
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          display: shortK
+        index: 0
+        slots: []
+  - id: '17156003451430.881158082202244'
+    name: additionalField
+    children: []
+  - id: '17156003451430.09748301076507238'
+    name: groupByField
+    children: []

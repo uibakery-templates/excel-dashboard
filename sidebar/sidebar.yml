@@ -1,0 +1,46 @@
+id: '17155985578250.4335862908000705'
+name: content
+children:
+  - id: '17155985578260.9857415576096915'
+    definitionId: layoutSidebar
+    parentSlotId: '17155985578250.4335862908000705'
+    styles:
+      xl:
+        backgroundColor:
+          value: default
+          dataValue: ''
+          withData: false
+    properties:
+      name: layoutSidebar
+      __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+        - xl
+        - xs
+      sidebarWidth:
+        value:
+          customValue: 70
+          customUnit: px
+        dataValue: 240px
+        withData: false
+      stickySidebar:
+        value: true
+        dataValue: 'false'
+        withData: false
+      containerStyles:
+        withData: false
+        dataValue: |-
+          {
+            padding: 'default',
+            shadow: 'default',
+            border: 'none'
+          }
+        value:
+          padding: default
+          shadow: default
+          border: default
+    index: 0
+    slots:
+      - id: '17155985578260.08875663045345505'
+        name: content
+        children:
+          - components/menu.yml
+          - components/image.yml

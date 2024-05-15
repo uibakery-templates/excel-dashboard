@@ -1,0 +1,277 @@
+id: '17156850766230.8153399702030726'
+definitionId: form
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 17
+      h: 18
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 29
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dynamicFields:
+    value: []
+    dataValue: |-
+      [
+        {
+          "prop": "id",
+          "type": "number",
+          "primaryKey": true
+        },
+        "name",
+        {
+          "prop": "avatar",
+          "type": "image"
+        },
+        {
+          "prop": "email",
+          "type": "link"
+        }
+      ]
+    withData: false
+  entity: '{{actions.getFilterOptions.data}}'
+  name: filters
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  columns: '4'
+  showSubmitBtn:
+    value: false
+    dataValue: 'true'
+    withData: false
+  submitOnEnter:
+    value: false
+    dataValue: 'true'
+    withData: false
+  heightMode: fixed
+  showCustomButton:
+    value: false
+    dataValue: 'false'
+    withData: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: default
+actions:
+  changeEvent:
+    - action: '17156849901580.04560895319789182'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+  submitEvent: []
+  formClick: []
+  customButtonClick: []
+slots:
+  - id: '17156850766230.5634448807692245'
+    name: structure
+    children:
+      - id: '17156853734450.2927080016062218'
+        definitionId: atomicSelect
+        parentSlotId: '17156850766230.5634448807692245'
+        styles: {}
+        properties:
+          name: atomicSelect5
+          prop: year
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          options:
+            value:
+              - value: 2021
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17156853949210.3099921376734629'
+              - value: 2022
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17156853949210.004645432805156169'
+            dataValue: |-
+              [
+                {
+                  value: 2021,
+                  color: 'primary'
+                },
+                {
+                  value: 2022,
+                  color: 'success'
+                }
+              ]
+            withData: false
+          withOptionsAutocomplete: true
+          editModeValue: '{{}}'
+          placeholder: Select
+        index: 0
+        slots: []
+      - id: '17156854250930.7667596362203604'
+        definitionId: atomicSelect
+        parentSlotId: '17156850766230.5634448807692245'
+        styles: {}
+        properties:
+          name: atomicSelect7
+          prop: quarter
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          options:
+            value:
+              - value: q1
+                color: basic
+                __UIBAKERY__SYSTEM_ID__: '17156854385280.11750118293778944'
+                title: Q1
+              - value: q2
+                color: basic
+                __UIBAKERY__SYSTEM_ID__: '17156854463000.7967790516870952'
+                title: Q2
+              - value: q3
+                color: basic
+                __UIBAKERY__SYSTEM_ID__: '17156854519910.9242260638520317'
+                title: Q3
+              - value: q4
+                color: basic
+                __UIBAKERY__SYSTEM_ID__: '17156854564770.24804557841566877'
+                title: Q4
+            dataValue: '[]'
+            withData: false
+          disabled:
+            value: false
+            dataValue: '{{!parent.value.year}}'
+            withData: true
+          placeholder: Select
+        index: 1
+        slots: []
+      - id: '17156855572120.11582870792100297'
+        definitionId: atomicSelect
+        parentSlotId: '17156850766230.5634448807692245'
+        styles: {}
+        properties:
+          name: atomicSelect8
+          prop: region
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          options:
+            value:
+              - value: Asia
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17156855609780.791757342713665'
+              - value: Europe
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17156855609780.8572538985018947'
+              - value: South America
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17156855609780.7794688745910558'
+              - value: Africa
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '17156855609780.07316828438455159'
+              - value: Oceania
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '17156855609780.9234521656023513'
+              - value: North America
+                color: primary-dark
+                __UIBAKERY__SYSTEM_ID__: '17156855609780.477442445651151'
+            dataValue: |-
+              [
+                {
+                  value: 'Asia',
+                  color: 'primary'
+                },
+                {
+                  value: 'Europe',
+                  color: 'success'
+                },
+                {
+                  value: 'South America',
+                  color: 'warning'
+                },
+                {
+                  value: 'Africa',
+                  color: 'danger'
+                },
+                {
+                  value: 'Oceania',
+                  color: 'info'
+                },
+                {
+                  value: 'North America',
+                  color: 'primary-dark'
+                }
+              ]
+            withData: false
+          mappedValue: ''
+          mappedColor: ''
+          editModeValue: '{{}}'
+          placeholder: Select
+        index: 2
+        slots: []
+      - id: '17156853486340.3326979385892219'
+        definitionId: atomicSelect
+        parentSlotId: '17156850766230.5634448807692245'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicSelect6
+          prop: saleType
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          options:
+            value:
+              - value: Wholesaler
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '17156860906430.19166123329684392'
+              - value: Online
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '17156860906430.36223573538858944'
+              - value: Direct Sales
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '17156860906430.5641925324545409'
+            dataValue: |-
+              [
+                {
+                  value: 'Wholesaler',
+                  color: 'primary'
+                },
+                {
+                  value: 'Online',
+                  color: 'success'
+                },
+                {
+                  value: 'Direct Sales',
+                  color: 'warning'
+                }
+              ]
+            withData: false
+          editModeValue: '{{}}'
+          placeholder: Select
+        index: 3
+        slots: []

@@ -1,0 +1,145 @@
+id: '17156003451430.9805120033525883'
+definitionId: chart
+styles:
+  xl:
+    gridItem:
+      x: 1
+      y: 0
+      w: 10
+      h: 34
+    flex:
+      alignSelf: auto
+      sizing: shrink-if-needed
+      flexGrow: 0
+      flexShrink: 1
+      flexBasis:
+        customValue: auto
+      order: 0
+      size:
+        widthValue: 120
+        widthUnit: px
+        heightValue: 112
+        heightUnit: px
+      grow: '1'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 34
+      w: 10
+      h: 34
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dataset: |-
+    [
+      {
+        "id": 1,
+        "name": "Susan Williamson",
+        "avatar": "https://sauibakeryprod.blob.core.windows.net/mock-database-assets/users-avatars/user-07.png",
+        "created_at": "2022-08-20T11:20:02.688Z",
+        "role": [
+          "Admin"
+        ],
+        "enabled": true,
+        "department": [
+          "Workspace",
+          "Infrastructure"
+        ],
+        "profile": "https://susan-williamson.com",
+        "first_name": "Susan",
+        "last_name": "Williamson",
+        "username": "sWilliamson",
+        "email": "Kyla_Considine@hotmail.com",
+        "email_verified": true,
+        "phone": "808.797.1741",
+        "twitter_handle": "sWilliamson",
+        "bio": "Friendly music geek. Organizer. Twitter scholar. Creator. General food nerd. Future teen idol. Thinker."
+      },
+     {
+        "id": 2,
+        "name": "Susan Williamson",
+        "avatar": "https://sauibakeryprod.blob.core.windows.net/mock-database-assets/users-avatars/user-07.png",
+        "created_at": "2022-08-20T11:20:02.688Z",
+        "role": [
+          "Admin"
+        ],
+        "enabled": true,
+        "department": [
+          "Workspace",
+          "Infrastructure"
+        ],
+        "profile": "https://susan-williamson.com",
+        "first_name": "Susan",
+        "last_name": "Williamson",
+        "username": "sWilliamson",
+        "email": "Kyla_Considine@hotmail.com",
+        "email_verified": true,
+        "phone": "808.797.1741",
+        "twitter_handle": "sWilliamson",
+        "bio": "Friendly music geek. Organizer. Twitter scholar. Creator. General food nerd. Future teen idol. Thinker."
+      },
+     
+    ]
+  config: |-
+    option = {
+      series: [
+        {
+          name: 'Access From',
+          type: 'pie',
+          radius: ['40%', '70%'],
+          avoidLabelOverlap: false,
+          itemStyle: {
+            borderRadius: 5,
+            borderColor: '#fff',
+            borderWidth: 2,
+          },
+
+          data: {{item.chart}}
+        },
+      ],
+    };
+  name: chart3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Chart
+  type: doughnutChart
+  structure:
+    - title: Series
+      data: []
+      color: primary
+      xProp: created_at
+      yProp: id
+      ignoreTimezone: false
+      __UIBAKERY__SYSTEM_ID__: '17155995247950.09922253904696876'
+      groupType: day
+      groupFunctionType: count
+  showLoading:
+    withData: true
+    dataValue: 'false'
+    value: false
+  useJsConfig: echarts
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+  __UIBAKERY__SHOW__CONDITION__CODE__: '{{item.chart}}'
+parentSlotId: '17156786689910.21489937801343495'
+index: 0
+actions: {}
+slots: []

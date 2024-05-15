@@ -1,0 +1,73 @@
+id: '17157719747070.4569419281155189'
+kind: workflow
+name: handlePageLoad
+nameConfigured: true
+steps:
+  - id: '17157720711900.7450050564556643'
+    type: condition
+    name: isDataLoaded
+    params:
+      - type: code
+        value: ./isDataLoaded.js
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: steps
+        value:
+          - condition: true
+            steps:
+              - id: '17157719779420.3637350566278992'
+                type: executeAction
+                name: updateDataBasedOnFilter
+                params:
+                  - type: action
+                    value: '17156849901580.04560895319789182'
+                    valueType: custom
+                  - type: isActionsLibraryCall
+                    value: false
+                    valueType: custom
+                  - type: customParams
+                    value: ./updateDataBasedOnFilter-customParams.js
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: successMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: failureMapper
+                    value: ''
+                    valueType: interpolatedValue
+                    interpolationType: code
+                  - type: mapperEnabled
+                    value: false
+                    valueType: custom
+                level: 1
+                fallthroughError: false
+                isChanged: true
+                nameConfigured: true
+          - condition: false
+            steps: []
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
+mode: manual
+modeConfigured: true
+parentPageId: '1'
+parentId: '17156849828880.2963657651525551'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.handlePageLoad.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handlePageLoad.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handlePageLoad.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

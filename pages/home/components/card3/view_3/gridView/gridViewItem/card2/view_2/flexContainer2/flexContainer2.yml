@@ -1,0 +1,53 @@
+id: '17156786689910.004992920242196108'
+definitionId: flexContainer
+parentSlotId: '17156003451430.4927293109143369'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 1
+      w: 24
+      h: 29
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 1
+      w: 24
+      h: 28
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 160
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  heightMode: fixed
+  name: flexContainer2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  flexWrap:
+    value: nowrap
+    dataValue: wrap
+    withData: false
+  flexDirection:
+    value: row
+    dataValue: row
+    withData: false
+actions: {}
+slots:
+  - id: '17156786689910.21489937801343495'
+    name: content
+    children:
+      - metric2.yml
+      - chart3.yml
