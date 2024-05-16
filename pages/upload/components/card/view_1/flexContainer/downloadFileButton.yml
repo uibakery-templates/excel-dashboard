@@ -64,7 +64,7 @@ properties:
     active: externalPath
     internalPath: ''
     externalPath: >-
-      https://drive.google.com/uc?export=download&id=10uVe5E4LRA2FqLDHw1B1RY_MNazIl4eW
+      https://sauibakeryprod.blob.core.windows.net/video-assets/templates-assets/sampleSheet.xlsx
   cssClasses:
     - download-button
     - ''
