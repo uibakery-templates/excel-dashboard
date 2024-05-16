@@ -63,6 +63,7 @@ properties:
     value: false
   limit: '11'
   heightMode: fixed
+actions: {}
 slots:
   - id: '17156062852140.6216603613554728'
     name: columns
@@ -463,4 +464,3 @@ slots:
             withData: false
         index: 7
         slots: []
-actions: {}
