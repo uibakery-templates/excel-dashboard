@@ -63,8 +63,7 @@ properties:
   linkInfo:
     active: externalPath
     internalPath: ''
-    externalPath: >-
-      https://sauibakeryprod.blob.core.windows.net/video-assets/templates-assets/sampleSheet.xlsx
+    externalPath: https://storage.uibakery.io/video-assets/templates-assets/sampleSheet.xlsx
   cssClasses:
     - download-button
     - ''

@@ -16,7 +16,7 @@ steps:
         valueType: string
       - type: url
         value: >-
-          https://sauibakeryprod.blob.core.windows.net/video-assets/templates-assets/sampleSheet.xlsx
+          https://storage.uibakery.io/video-assets/templates-assets/sampleSheet.xlsx
         valueType: interpolatedValue
         interpolationType: string
       - type: headers
