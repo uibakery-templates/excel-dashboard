@@ -1,0 +1,11 @@
+id: '17156657234480.3476839851003992'
+nameConfigured: true
+name: filteredExcelData
+kind: store_item
+parentId: '17211231684290.10914172676772904'
+storeItem:
+  value: ''
+  valueType: object
+  initialValue: '{}'
+  version: 1
+steps: []

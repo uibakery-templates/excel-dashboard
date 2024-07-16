@@ -21,14 +21,23 @@ steps:
         interpolationType: string
       - type: headers
         value:
-          - name: Content-Type
-            value: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+          mode: structured
+          value:
+            custom: ''
+            structured:
+              - name: Content-Type
+                value: >-
+                  application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
         valueType: custom
         interpolationType: string
       - type: queryParams
         value:
-          - name: ''
-            value: ''
+          mode: structured
+          value:
+            custom: ''
+            structured:
+              - name: ''
+                value: ''
         valueType: custom
         interpolationType: string
       - type: body
